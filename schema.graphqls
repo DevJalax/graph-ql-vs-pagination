@@ -1,0 +1,9 @@
+type Query {
+    users(lastId: ID, pageSize: Int = 10): [User]
+}
+
+type User {
+    id: ID!
+    name: String!
+    email: String!
+}
